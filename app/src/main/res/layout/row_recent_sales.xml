@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/black"
+    android:padding="16dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.joooonho.SelectableRoundedImageView
+            android:id="@+id/image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:sriv_border_color="@color/white"
+            app:sriv_border_width="1dip"
+            app:sriv_left_bottom_corner_radius="8dip"
+            app:sriv_left_top_corner_radius="8dip"
+            app:sriv_right_bottom_corner_radius="8dip"
+            app:sriv_right_top_corner_radius="0dip" />
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/recentSalestitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/texgyreadventor_regular"
+            android:maxLines="1"
+            android:textSize="12sp"
+            tools:text="Ps3 Remote Controller"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/recentSalesQty"
+            app:layout_constraintStart_toEndOf="@+id/image"
+            app:layout_constraintTop_toTopOf="@+id/image"
+            android:layout_marginStart="16dp" />
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/recentSalesQty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/texgyreadventor_regular"
+            android:maxLines="1"
+            tools:text="No. of item : 1"
+            android:textColor="@color/blacklight"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toTopOf="@+id/recentSalesPrice"
+            app:layout_constraintStart_toEndOf="@+id/image"
+            app:layout_constraintTop_toBottomOf="@+id/recentSalestitle"
+            android:layout_marginStart="16dp" />
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/recentSalesPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/texgyreadventor_regular"
+            android:maxLines="1"
+            android:text="1"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/image"
+            app:layout_constraintStart_toEndOf="@+id/image"
+            app:layout_constraintTop_toBottomOf="@+id/recentSalesQty"
+            android:layout_marginStart="16dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

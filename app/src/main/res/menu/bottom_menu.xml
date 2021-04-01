@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/home_icon"
+        android:title="@string/home"
+        android:enabled="true"/>
+
+    <item
+        android:id="@+id/orderFragment"
+        android:title="@string/order"
+        android:enabled="true"/>
+
+    <item
+        android:id="@+id/stockFragment"
+        android:title="@string/stock"
+        android:enabled="true"/>
+    <item
+        android:id="@+id/categoriesFragment"
+        android:icon="@drawable/categories_icon"
+        android:enabled="true"
+        android:title="@string/categories" />
+    <item
+        android:id="@+id/accountFragment"
+        android:title="@string/account"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_account_circle_24"/>
+
+</menu>
